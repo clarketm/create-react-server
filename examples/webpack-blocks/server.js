@@ -6,7 +6,6 @@ import {createExpressMiddleware, createWebpackMiddleware, skipRequireExtensions}
 import config from "./webpack.config";
 
 // Create React App does not allow to create common library outside its' src dir, so we import from there
-import template from "../create-react-app/template";
 import createApp from "../create-react-app/src/app";
 
 skipRequireExtensions();
@@ -19,7 +18,6 @@ function isDevServer() {
 
 const options = {
     app: createApp,
-    template: template,
     outputPath: config.output.path,
     templatePath: path.join(config.output.path, 'index.html'),
     debug: true

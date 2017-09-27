@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import Helmet from "./Helmet";
-import {withWrapper} from "../../../../wrapper"; // this should be create-react-server/wrapper
+import {withWrapper} from "../wrapper"; // this should be create-react-server/wrapper
 
 export class Page extends Component {
 
@@ -21,3 +21,4 @@ export class Page extends Component {
 }
 
 export default withWrapper(Page);
+// export default Page;
